@@ -272,7 +272,7 @@ p{
  
 :-ms-input-placeholder { color: #D7DEE6; }
 
-.contact-form input[type=submit] {
+.contact-form input[type=submit] { /*personalizacion del boton*/
     background-color: #F74442;
     font-weight: 400;
     color: white;
@@ -283,12 +283,12 @@ p{
     background-image: url("../images/decoracion_oscura_small.svg");
 }
 
-footer{
+footer{ /*color de fondo y color de texto de pie de pagina*/
     background-color: #0D5061;
     color:#D7DEE6;
 }
 
-footer .social-links {
+footer .social-links { /*margen 0 para iconos del pie de pagina*/
     margin: 0;
 }
 
