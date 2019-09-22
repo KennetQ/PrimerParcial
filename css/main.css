@@ -24,6 +24,12 @@ body {
     padding-block-end: 2em;  /*Darle espacio al margen final*/
 }
 
+.header img{
+    padding-left: 1em;
+    width: 135px; 
+    padding-bottom: 2em;
+}
+
 .src-only {
     display: none;
 }
@@ -35,10 +41,6 @@ body {
     height: 10%;
     align-items: center;
     padding: 0em 2em; /**/
-}
-
-#contacto{ /*Cambia color a contacto*/
-    color: red;
 }
 
 .hide-mobile {
@@ -108,6 +110,7 @@ p{
     color: #D7DEE6;
     text-decoration: none;
     font-size: 8.5em; /*valor inicial 2.5em*/
+    margin-top: 8em;
    
     
 }
@@ -123,6 +126,8 @@ p{
 .fab{   /*Clase editada*/
     width: 1em;       /*Valor inicial 3em*/
     height: 1em;
+    margin-top: 0%;
+    
 }
 
 .green-area {
@@ -170,7 +175,7 @@ p{
     margin-top: 2em;
     padding: 0em 1rem;
     font-size: 0.9em;
-    white-space: nowrap;
+    white-space: nowrap; /*Para una sola fila+*/
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -191,27 +196,40 @@ p{
 .about h2 {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.125em;
+    font-size: 2.125em;
     margin: 2em;
 }
 
 .bio-info img{
    width: 200px;
+   height: 150px;
+   padding-right: 1em;
+   display: flex;
+   justify-content: flex-start;
+    
 }
 
 .bio-info p{
-    font-size: 16px;
+    font-size: 10px;
     padding: 2em;
-    text-align: left;
-    line-height: 25px;
+    text-align: justify;
+    line-height: 20px;
     letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 4em;
+    margin: 0em, 4em, 0em, 5em;
 }
 
 .contact {
     display: flex;
     flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-end;
     text-align: left;
     padding: 0px 1em;
+    
 }
 
 .contact * + * {
@@ -223,12 +241,17 @@ p{
     flex-direction: column;
 }
 
-.contact-form input, .contact-form textarea{
+.contact-form input , .contact-form textarea{
     padding: 1rem 2rem;
     border: none;
     border-radius: 0px 2em;
     font-size: 1em;
-    width: 100%;
+    width: 90%;
+    height: 30%;
+    justify-content: flex-end;
+    
+
+    
 }
 
 /* Decorando placeholder */
@@ -290,13 +313,17 @@ footer .social-links {
     
 }
 
+.menu li a:hover{
+    color: #F74442;
+}
+
 /* Pesonalizando estilo para tablets*/
 @media only screen and (min-width: 768px) {
   
     .post ul {
         list-style: none;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
     }
     
@@ -310,9 +337,7 @@ footer .social-links {
 
     .logo {   /*Logo Aldana*/
         width: 100px;
-        margin: 1.5em;
-        padding-left: 3.2em;
-        font-size: 1em;
+        margin: 1.5;
     }
 
     .show-desktop {
