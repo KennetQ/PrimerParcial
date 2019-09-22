@@ -14,7 +14,7 @@ body {
     background-color: #112935;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
+    text-align: center; /*se establece el estilo para el fondo y la fuente de la pagina*/
     font-weight: 400;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 .src-only {
-    display: none;
+    display: none; /*se oculta el elemento*/
 }
 
 .header ul{  /*Navegacion*/
@@ -54,12 +54,12 @@ p{
     line-height: 25px;
 }
 
-.logo {
+.logo { /*se define el tamaño que tendra el logo*/
     width: 90px;
     margin: 2em;
 }
 
-.options {
+.options { /*se aigna que el menu de la pagina se posicione en la parte superior derecha de la pagina*/
     color: inherit;
     text-decoration: none;
     position: relative;
@@ -74,22 +74,28 @@ p{
 }
 .options i:last-child {
     font-size: 1.6rem;
+    display: flex;
+    color: whitesmoke;
+    padding-top: 0em;
+    scroll-padding-right: 0.45em;
+    scroll-padding-bottom: 1.3em;
+    order:1;
 }
 
 /* Big area */
 .big-hero img {
-    width: 150px;
+    width: 150px;/*define el ancho de la imagen principal*/
     
 }
 
-.big-hero h2 {
+.big-hero h2 { /*se le añade un fuente al texto*/
     font-size: 1.875em;
     font-weight: 700;
     letter-spacing: 0.002em;
     margin-top: 1em ;
 }
 
-.big-hero p {
+.big-hero p { /*Cambia el color y tamaño de fuente de el parrafo*/
     font-size: 1em;;
     color: #D7DEE6;
 
@@ -130,7 +136,7 @@ p{
     
 }
 
-.green-area {
+.green-area { /*se cambia de color el apartado de publicaciones*/
     background-color: #0AC693; 
 }
 
@@ -139,32 +145,32 @@ p{
     padding: 1em;
     margin-bottom: -2px;
 }
-.post h2 {
+.post h2 { /*se define fuente en mayusculas*/
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.125em;
     margin: 1em;
 }
 
-.post ul {
+.post ul { /*no se define estilo*/
     list-style: none;
 }
-
-.post ul li {
+ 
+.post ul li { /*se define un tamaño minimo y maximo */
     min-height: 300px;
     max-width: 350px;
     margin: 2rem auto;
 }
 
-.post ul li article {
+.post ul li article { /*se ocultan los elementos  si se salen del contenedor*/
     overflow: hidden;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: #ffffff; /*se difene el color blanco*/
     text-align: left;
     padding-bottom: 2em;
 }
 
-.post article img{
+.post article img{ /*se le asigna un tamaño a cada imagen del articulo*/
     height: 150px;
     width: 100%;
     object-fit: cover;
@@ -189,18 +195,18 @@ p{
 
 /* About */
 
-.about{
+.about{ /*se define un margen superior*/
     margin-top: 2em;
 }
 
-.about h2 {
+.about h2 { /*el texto se define con mayuscula*/
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2.125em;
     margin: 2em;
 }
 
-.bio-info img{
+.bio-info img{ /*se le asigna tamaño a la imagen */
    width: 200px;
    height: 150px;
    padding-right: 1em;
@@ -209,8 +215,8 @@ p{
     
 }
 
-.bio-info p{
-    font-size: 10px;
+.bio-info p{ 
+    font-size: 10px; /*se le asigna un tamaño al parrafo*/
     padding: 2em;
     text-align: justify;
     line-height: 20px;
@@ -222,7 +228,7 @@ p{
     margin: 0em, 4em, 0em, 5em;
 }
 
-.contact {
+.contact { /*en esta clase se define la posicion de los formularios*/
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
@@ -238,10 +244,10 @@ p{
 
 .contact-form {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*posicion en columna de los formularios*/
 }
 
-.contact-form input , .contact-form textarea{
+.contact-form input , .contact-form textarea{ /*estilos de bordes y paddings*/
     padding: 1rem 2rem;
     border: none;
     border-radius: 0px 2em;
@@ -257,11 +263,11 @@ p{
 /* Decorando placeholder */
 
 ::-webkit-input-placeholder { 
-    color: #D7DEE6; 
+    color: #D7DEE6; /*color del marcado de posicion de texto del formulario*/
 } 
  
 :-moz-placeholder { /* Firefox 18- */ color: #D7DEE6; } 
- 
+  /*color de texto de un formulario en mozilla firefox*/
 ::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; } 
  
 :-ms-input-placeholder { color: #D7DEE6; }
